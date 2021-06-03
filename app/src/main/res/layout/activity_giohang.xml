@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context="activity.GioHang">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarcart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#dc3545"
+        app:title="Giỏ hàng"
+        app:titleTextColor="#ffffff"></androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/textviewnotify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/emptycart"
+                android:textSize="25sp" />
+
+            <ListView
+                android:id="@+id/lv_cart_product"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"></ListView>
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rcv_cart_product"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/helvetica"
+            android:text="Thành Tiền :"
+            android:textColor="@color/text_color"
+            android:textSize="18sp"></TextView>
+
+        <TextView
+            android:id="@+id/tv_cart_total_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/helvetica"
+            android:text="0Đ"
+            android:textColor="#ff5854"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_cart_order"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/custom_button_red"
+        android:backgroundTint="@null"
+        android:text="Tiến Hành đặt hàng"
+        app:backgroundTint="@null" />
+
+
+</LinearLayout>

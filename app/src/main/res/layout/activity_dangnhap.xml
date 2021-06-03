@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="activity.Dangnhap">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toobardn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#dc3545"
+        app:title="Đăng nhập">
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/toobardn"
+        app:srcCompat="@drawable/logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"/>
+
+        <EditText
+            android:id="@+id/name"
+            android:textSize="15sp"
+            android:fontFamily="@font/helvetica"
+            android:layout_marginTop="30dp"
+            android:paddingStart="10dp"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/ic_baseline_person_24"
+            android:hint="Name"
+            android:background="@drawable/et_custom"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="10dp" />
+
+        <EditText
+            android:id="@+id/pass"
+            android:textSize="15sp"
+            android:fontFamily="@font/helvetica"
+            android:layout_marginTop="20dp"
+            android:paddingStart="10dp"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/ic_baseline_https_24"
+            android:hint="Password"
+            android:background="@drawable/et_custom"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="10dp" />
+
+
+        <CheckBox
+            android:id="@+id/showPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@id/pass"
+            android:layout_centerInParent="true"
+            android:layout_gravity="end"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/helvetica"
+            android:gravity="center"
+            android:text="Show password"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/login"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/helvetica"
+            android:text="Login"
+            android:background="@drawable/btn_custom"
+            android:backgroundTint="@null"
+            app:backgroundTint="@null"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:onClick="dangki"
+            android:fontFamily="@font/helvetica"
+            android:textSize="15sp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:text="Register Here"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

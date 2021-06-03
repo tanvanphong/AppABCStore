@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:weightSum="10"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="activity.Chitietsanpham">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarchitietsanpham"
+        android:background="#b7301a"
+        app:titleTextColor="#000000"
+        app:title="Chi tiết sản phẩm"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+    </androidx.appcompat.widget.Toolbar>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:id="@+id/img_detail_product_photo"
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/hinhdc">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/tv_detail_product_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_detail_product_photo"
+                android:text="Iphone 12"
+                android:fontFamily="@font/helvetica"
+                android:textSize="25sp"
+                android:textColor="@color/text_color">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_detail_product_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/tv_detail_product_name"
+                android:text="20.900.000 Đ"
+                android:fontFamily="@font/helvetica"
+                android:textSize="20sp"
+                android:textColor="@color/red">
+            </TextView>
+            <LinearLayout
+                android:layout_marginTop="3dp"
+                android:id="@+id/line1"
+                android:orientation="horizontal"
+                android:layout_below="@id/tv_detail_product_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="Số lượng:"
+                    android:textSize="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <Spinner
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/spinner"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:background="@drawable/spinner"
+                    android:gravity="center_horizontal"
+                    android:padding="15dp"
+                    android:textAlignment="center"></Spinner>
+
+                <Button
+                android:layout_marginLeft="20dp"
+                android:id="@+id/btn_detail_product_buy"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="20dp"
+                android:text="Mua Ngay"
+                android:textSize="15dp"
+                android:background="@drawable/custom_button_red"
+                android:backgroundTint="@null"
+                app:backgroundTint="@null">
+            </Button>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_detail_product_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mô Tả Chi Tiết Sản Phẩm"
+                android:fontFamily="@font/helvetica"
+                android:layout_below="@+id/line1"
+                android:textSize="25dp"
+                android:textColor="@color/red">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_detail_product_description"
+                android:layout_below="@+id/tv_detail_product_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:fontFamily="@font/helvetica"
+                android:text="Mới đây, Apple đã trình diện đến người dùng mẫu điện thoại iPhone 12 128 GB với sự tuyên bố về một kỷ nguyên mới của iPhone: iPhone 5G siêu nhanh, nâng cấp về màn hình và hiệu năng hứa hẹn đây sẽ là smartphone cao cấp đáng chú ý nhất trong năm nay."
+                android:textSize="20dp">
+            </TextView>
+
+        </RelativeLayout>
+
+    </ScrollView>
+</LinearLayout>
